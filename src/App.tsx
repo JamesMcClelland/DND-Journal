@@ -1,10 +1,24 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import QuestForm from "./QuestForm";
+import {Quest} from "./types/Quest";
+import {QuestStatus} from "./types/QuestStatus";
 
-function App() {
-  return (
-    <div className="App">
+const status: QuestStatus = {
+  id: 1,
+  status: "pending"
+}
+
+const quest: Quest = {
+  id: 1,
+  name: "The search for the pizza",
+  status: status
+}
+
+class App extends React.Component {
+  render () {
+    return <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -16,11 +30,11 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          <QuestForm  />
         </a>
       </header>
-    </div>
-  );
+    </div>;
+  }
 }
 
 export default App;

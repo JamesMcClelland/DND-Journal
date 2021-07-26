@@ -1,0 +1,23 @@
+{
+  "quest-status" : [
+    {
+      "id": 1,
+      "name": "Pending"
+    },
+    {
+      "id": 1,
+      "name": "In Progress"
+    },
+    {
+      "id": 1,
+      "name": "Completed"
+    }
+  ],
+  "quest" : [
+    {
+      "id": 1,
+      "name": "Search for the lost pizza",
+      "quest_status_id": 1
+    }
+  ]
+}
