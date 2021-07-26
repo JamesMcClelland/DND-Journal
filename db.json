@@ -17,7 +17,26 @@
     {
       "id": 1,
       "name": "Search for the lost pizza",
-      "quest_status_id": 1
+      "quest_status": {
+        "id" : 1,
+        "status": "Pending"
+      },
+      "quest_type": {
+        "id" : 1,
+        "type": "Primary"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Boring secondary quest",
+      "quest_status": {
+        "id" : 1,
+        "status": "Pending"
+      },
+      "quest_type": {
+        "id" : 2,
+        "type": "Secondary"
+      }
     }
   ]
 }
