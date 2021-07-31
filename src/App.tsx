@@ -1,7 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import QuestForm from "./quest/QuestForm";
 import {Quest} from "./types/Quest";
 import {QuestStatus} from "./types/QuestStatus";
 import {Accordion, AccordionDetails, AccordionSummary, Box, Typography} from "@material-ui/core";

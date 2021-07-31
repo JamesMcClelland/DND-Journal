@@ -1,5 +1,5 @@
 {
-  "quest-status" : [
+  "quest-status": [
     {
       "id": 1,
       "name": "Pending"
@@ -13,30 +13,86 @@
       "name": "Completed"
     }
   ],
-  "quest" : [
+  "quest": [
     {
       "id": 1,
-      "name": "Search for the lost pizza",
+      "name": "Search for the lost pizzas",
+      "description": "There is many a pizza to be found",
+      "type": "Primary",
       "quest_status": {
-        "id" : 1,
+        "id": 1,
         "status": "Pending"
       },
       "quest_type": {
-        "id" : 1,
-        "type": "Primary"
+        "id": 2,
+        "type": "Secondary"
       }
     },
     {
       "id": 2,
       "name": "Boring secondary quest",
+      "description": "Mate not even worth it",
       "quest_status": {
-        "id" : 1,
+        "id": 1,
         "status": "Pending"
       },
       "quest_type": {
-        "id" : 2,
+        "id": 2,
         "type": "Secondary"
       }
+    },
+    {
+      "name": "Test Quest",
+      "description": "Sick quest mate",
+      "id": 3,
+      "quest_status": {
+        "id": 1,
+        "status": "Pending"
+      },
+      "quest_type": {
+        "id": 2,
+        "type": "Secondary"
+      }
+    },
+    {
+      "name": "Sick quest",
+      "description": "Test",
+      "id": 4,
+      "quest_status": {
+        "id": 1,
+        "status": "Pending"
+      },
+      "quest_type": {
+        "id": 2,
+        "type": "Secondary"
+      }
+    },
+    {
+      "name": "Sick quest",
+      "description": "test",
+      "id": 5,
+      "quest_status": {
+        "id": 1,
+        "status": "Pending"
+      },
+      "quest_type": {
+        "id": 2,
+        "type": "Secondary"
+      }
+    }
+  ],
+  "quest-notes": [
+    {
+      "id": 1,
+      "notes": [
+        {
+          "id": 1,
+          "title": "Test",
+          "body": "A test note",
+          "entity_id": 1,
+          "entity_type": "quest"
+        }
+      ]
     }
   ]
 }

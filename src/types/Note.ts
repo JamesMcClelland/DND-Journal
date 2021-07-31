@@ -1,6 +1,6 @@
 export interface Note {
     id ?: number;
-    title: string;
+    title?: string;
     body: string;
     entity_id: number;
     entity_type: string;

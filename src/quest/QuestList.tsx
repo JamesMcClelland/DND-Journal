@@ -3,6 +3,8 @@ import React from "react";
 import {Quest} from "../types/Quest";
 import QuestListItem from "./QuestListItem";
 import {Box} from "@material-ui/core";
+import Button from "@material-ui/core/Button";
+import {Add} from "@material-ui/icons";
 
 export default class QuestList extends React.Component<any, any> {
     private questRequest: QuestRequest;
@@ -45,9 +47,10 @@ export default class QuestList extends React.Component<any, any> {
     render() {
         return <Box flexGrow={1}>
             {this.state.ready
-                ? this.state.quests.map((quest: Quest) => <QuestListItem quest={quest} key={quest.id}/>)
+                ? this.state.quests.map((quest: Quest) => <QuestListItem onQuestClick={this.props.onQuestClick} quest={quest} key={quest.id}/>)
                 :<div>Getting quests</div>
             }
+            <Button onClick={this.props.onQuestAddClick} variant="contained" color="primary" endIcon={<Add/>}>Add Quest</Button>
         </Box>
     }
 }

@@ -12,7 +12,7 @@ export default class QuestListItem extends React.Component<any, any>{
     }
 
     render() {
-        return <Box component="div" m={1} display="flex" flexGrow={1}>
+        return <Box component="div" m={1} display="flex" flexGrow={1} style={{cursor:'pointer'}} onClick={() => {this.props.onQuestClick(this.quest)}}>
             <Box flexGrow={1}>{this.quest.name}</Box>
             <Box>
                 <QuestStatusChips quest={this.quest}/>

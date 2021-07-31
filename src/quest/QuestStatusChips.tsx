@@ -12,7 +12,7 @@ export default class QuestStatusChips extends React.Component<any, any>{
 
     getStatusColor() {
         const status = this.quest.quest_status.status;
-        return (status == 'Pending' || status == 'Failed' || status == 'Stalled') ? 'default' : 'primary';
+        return (status === 'Pending' || status === 'Failed' || status === 'Stalled') ? 'default' : 'primary';
     }
 
     getTypeColor() {
@@ -21,8 +21,8 @@ export default class QuestStatusChips extends React.Component<any, any>{
 
     render() {
         return <Box component="span">
-            <Box component="span" mr={1}><Chip label={this.quest.quest_status.status} color={this.getStatusColor()} /></Box>
-            <Chip label={this.quest.quest_type.type} color={this.getTypeColor()} />
+            {this.quest?.quest_status?.status && <Box component="span" mr={1}><Chip label={this.quest.quest_status.status} color={this.getStatusColor()} /></Box>}
+            {this.quest?.quest_type?.type && <Chip label={this.quest.quest_type.type} color={this.getTypeColor()} />}
         </Box>
     }
 }
